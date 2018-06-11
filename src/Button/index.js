@@ -5,29 +5,33 @@
  */
 
 import React from 'react';
+import cx from 'classnames';
+import * as s from './styles';
 import { string } from 'prop-types';
 
-import ButtonSimple from './ButtonSimple';
-import ButtonLink from './ButtonLink';
-import ButtonLabel from './ButtonLabel';
+const Button = ({ href, children, ...props }) => {
+   /* Check the button to a href attribute */
+  let isButtonLink = href ? true : false;
 
-const Button = ({ href, label, children, ...props }) => {
+  /* Adding an "API" classname, by which it is possible to redefine the component style properties */
+  let className = cx(
+    isButtonLink ? 'button button--link' : 'button', 
+    props.className
+  );
+
   /*
    * Different buttons to be rendered, depending on the
    * given properties
    */
-  if (href) {
-    return <ButtonLink href={href} {...props}>{children}</ButtonLink>;
-  } else if (label) {
-    return <ButtonLabel label={label} {...props}>{children}</ButtonLabel>;
+  if (isButtonLink) {
+    return <s.ButtonLink href={href} {...props} className={className}>{children}</s.ButtonLink>;
   } else {
-    return <ButtonSimple {...props}>{children}</ButtonSimple>;
+    return <s.Button {...props} className={className}>{children}</s.Button>;
   }
 };
 
 Button.propTypes = {
-  href: string,
-  label: string
+  href: string
 };
 
 export default Button;

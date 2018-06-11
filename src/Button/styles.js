@@ -55,14 +55,6 @@ export const Button = styled.div`
   ${isCircular}
 `;
 
-/* Styled for a label element inside a button */
-export const Label = styled.span`
-  margin: 0;
-  margin-left: 0.5em;
-  padding: 0 1em 0 0.5em;
-  display: inline-flex;
-  border-radius: 0 3px 3px 0;
-  height: ${ () => ('2.40em'.split('em')[0] - 0.1 + 'em')};
-  line-height: 2.40em;
-  font-size: ${p => p.size ? p.size : '1rem'};
+export const ButtonLink = Button.withComponent('a').extend`
+  pointer-events: ${props => props.disabled ? 'none' : 'default'};
 `;

@@ -38,8 +38,8 @@ storiesOf('Button', module) // eslint-disable-line no-undef
             </Button>
           </Box>
           <Box>
-            <Button color='#000' textColor="#fff" label='2048'>Like</Button>
-            <Button color='#00d1b2' textColor="#fff" label='2048'>Like</Button>
+            <Button color='#000' textColor="#fff">Like</Button>
+            <Button color='#00d1b2' textColor="#fff">Like</Button>
           </Box>
         </div>
       );
