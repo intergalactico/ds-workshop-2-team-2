@@ -13,12 +13,6 @@ import styled, { injectGlobal } from 'styled-components';
 
 injectGlobal`
   @font-face {
-    font-family:"futura-pt-bold";
-    src:url("https://use.typekit.net/af/ff35f0/00000000000000003b9af1e4/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"),url("https://use.typekit.net/af/ff35f0/00000000000000003b9af1e4/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"),url("https://use.typekit.net/af/ff35f0/00000000000000003b9af1e4/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
-    font-style:normal;font-weight:700;
-  }
-
-  @font-face {
     font-family:"lato";
     src:url("https://use.typekit.net/af/f7f60c/00000000000000000001522d/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff2"),url("https://use.typekit.net/af/f7f60c/00000000000000000001522d/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff"),url("https://use.typekit.net/af/f7f60c/00000000000000000001522d/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("opentype");
     font-style:italic;font-weight:400;
@@ -66,38 +60,45 @@ import colors from '../Colors/colorset';
  */
 
 export const Header1 = styled.h1`
-  font-family: futura-pt-bold;
+  font-family: lato;
+  font-size: 64px;
+  font-weight: 900;
+  color: ${colors.black};
 `;
 
 export const Header2 = styled.h2`
-  font-family: futura-pt-bold, sans-serif;
-  font-size: 22px;
-  color: ${colors.dark};
-  line-height: 1.4em;
-  margin: 0;
+  font-family: lato;
+  font-size: 48px;
+  font-weight: 900;
+  color: ${colors.black};
 `;
 
 export const Header3 = styled.h3`
-  font-family: lato, sans-serif;
-  font-size: 16px;
-  color: ${colors.grey};
-  font-weight: 700;
-  margin: 0;
-`;
-
-export const P = styled.p`
   font-family: lato;
-  color: ${colors.dark};
+  font-size: 36px;
+  font-weight: 900;
+  color: ${colors.black};
 `;
 
-/*
- * In ordder to show in the story (documentation) what are the available
- * fonts, this component provides styles for each font. They are not
- * meant to be used in the other components, only in dpcumentation.
- */
+export const Header4 = styled.h4`
+  font-family: lato;
+  font-size: 18px;
+  font-weight: 900;
+  color: ${colors.black};
+`;
 
-export const FuturaBold = styled.p`
-  font-family: futura-pt-bold;
+export const Header5 = styled.h5`
+  font-family: lato;
+  font-size: 16px;
+  font-weight: 900;
+  color: ${colors.grey};
+`;
+
+export const Text = styled.p`
+  font-family: lato;
+  font-family: 16px;
+  line-height: 20px;
+  color: ${colors.black};
 `;
 
 export const Lato = styled.p`

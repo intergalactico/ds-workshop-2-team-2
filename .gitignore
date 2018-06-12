@@ -5,3 +5,4 @@ lib/**/*
 .DS_Store
 storybook-static/
 yarn-error.log
+*.swp
