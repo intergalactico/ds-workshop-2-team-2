@@ -60,22 +60,4 @@ storiesOf('Button', module) // eslint-disable-line no-undef
           <Button color='#000' size='2.0rem'>XLarge</Button>
         </Box>
       );
-  }))
-  .add('with icon',
-    withInfo()(() => {
-      return (
-        <Box>
-          <Button color='#1b8ceb' size='1rem'>
-            <Icon name='star' />
-            Some text
-          </Button>
-          <Button color='#00d1b2' size='0.785rem' isOutlined>
-            <Icon name='star' />
-            Some text
-          </Button>
-          <Button color='#888888' tone={2} size='1rem' isIcon>
-            <Icon name='stack-overflow' />
-          </Button>
-        </Box>
-      );
   }));
