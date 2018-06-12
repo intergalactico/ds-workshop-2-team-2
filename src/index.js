@@ -9,6 +9,7 @@ import Button from 'Button';
 import Icon from 'Icon';
 import Section, {SectionHeader, SectionText} from 'Section';
 import Typography from 'Typography';
+import TeamMember from 'TeamMember';
 
 export {
   Box,
@@ -17,5 +18,6 @@ export {
   Section,
   SectionHeader,
   SectionText,
-  Typography
+  Typography,
+  TeamMember
 };
