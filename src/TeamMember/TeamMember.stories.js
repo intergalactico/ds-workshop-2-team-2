@@ -14,7 +14,7 @@ import { withInfo } from '@storybook/addon-info';
 
 import TeamMember from '.';
 
-import avatar from '../../assets/avatar.jpg';
+// import avatar from '../../assets/avatar.jpg';
 
 storiesOf('TeamMember', module) // eslint-disable-line no-undef
   .add('index',
@@ -29,7 +29,7 @@ storiesOf('TeamMember', module) // eslint-disable-line no-undef
           twitter: 'donaldducknl',
           linkedin: 'https://www.linkedin.com/company/the-walt-disney-company/'
         }}
-        avatar={avatar}
+        avatar='/assets/avatar.jpg'
       />
   )))
   .add('no social networks',
@@ -37,6 +37,6 @@ storiesOf('TeamMember', module) // eslint-disable-line no-undef
       <TeamMember
         name="Donald Duck"
         title="Director of Everything"
-        avatar={avatar}
+        avatar='/assets/avatar.jpg'
       />
   )));
