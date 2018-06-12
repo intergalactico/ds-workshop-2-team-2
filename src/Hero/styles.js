@@ -2,8 +2,8 @@ import styled from 'styled-components';
 
 
 import * as ts from '../Typography/styles';
-
 import colors from '../Colors/colorset';
+import Button from '../Button';
 
 export const Hero = styled.div`
   text-align: center;
@@ -12,5 +12,11 @@ export const Hero = styled.div`
 
 export const HeroHeader = ts.Header1;
 
-export const HeroText = ts.Text;
+export const HeroText = styled(ts.Text)`
+  text-transform: uppercase
+`;
 
+
+export const HeroButton = styled(Button)`
+  text-transform: uppercase
+`
