@@ -93,6 +93,7 @@ export const Header1 = styled.h1`
   font-size: 64px;
   font-weight: 900;
   color: ${colors.black};
+  text-transform: uppercase;
 `;
 
 export const Header2 = styled.h2`
