@@ -9,5 +9,6 @@ export default {
   lightGrey: '#888888',
   disabled: '#E0E0E1',
   white: '#FFFFFF',
-  black: '#0B0B0B'
+  black: '#0B0B0B',
+  royalgold: '#FFD100'
 };
