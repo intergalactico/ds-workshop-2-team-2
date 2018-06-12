@@ -7,6 +7,7 @@ const Hero = () => {
     <s.Hero>
       <s.HeroHeader>a design systems conference</s.HeroHeader>
       <s.HeroText>MARCH 14th – 15th, 2018 IN HELSINKI, FINLAND</s.HeroText>
+      <s.HeroButton>event overview</s.HeroButton>
     </s.Hero>
   )
 }
