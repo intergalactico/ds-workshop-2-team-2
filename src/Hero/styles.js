@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 
 import * as ts from '../Typography/styles';
-import colors from '../Colors/colorset';
 import Button from '../Button';
 
 export const Hero = styled.div`
