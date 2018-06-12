@@ -31,5 +31,4 @@ export const HeroText = styled(ts.Text)`
 
 export const HeroButton = styled(Button)`
   text-transform: uppercase;
-  color: ${colors.white};
 `
