@@ -22,7 +22,7 @@ const isIcon = ({ isIcon }) => {
 };
 
 const borderRadiusFromSize = (sz) => {
-    let [_, size, unit] = sz.match(/^([\d\.]+)(\w+)$/);
+    let [_, size, unit] = sz.match(/^([\d.]+)(\w+)$/); // eslint-disable-line no-unused-vars
     return parseFloat(size) * 2 + unit;
 };
 
