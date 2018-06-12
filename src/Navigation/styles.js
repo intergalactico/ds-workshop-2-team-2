@@ -19,7 +19,8 @@ export const Navigation = styled.div`
     align-items: center;
     justify-content: space-between;
     padding: 0 1rem;
-    ${isFixed}
+    ${isFixed},
+    background: transparent
 `;
 
 export const NavigationButtons = styled.div`
