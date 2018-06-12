@@ -2,7 +2,7 @@
  * Section component provides a container with paddings.
  */
 import React from 'react';
-import { node, arrayOf, oneOfType } from 'prop-types';
+import { string, node, arrayOf, oneOfType } from 'prop-types';
 /*
  * For its styles, Section component uses plain CSS.
  * Change it to styled-components, if you want.
@@ -32,6 +32,7 @@ Section.defaultProps = {
 };
 
 Section.propTypes = {
+  backgroundColor: string,
   children: oneOfType([arrayOf(node), node])
 };
 
