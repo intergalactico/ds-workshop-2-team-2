@@ -1,5 +1,5 @@
 import React from 'react'
-import { string } from 'prop-types';
+import { string, func } from 'prop-types';
 
 import * as s from './styles.js'
 
@@ -17,7 +17,7 @@ Hero.propTypes = {
     title: string.isRequired,
     text: string.isRequired,
     action: string.isRequired,
-    onAction: string.isRequired,
+    onAction: func.isRequired,
     background: string,
     height: string
 };

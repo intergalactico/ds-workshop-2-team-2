@@ -6,6 +6,8 @@
 import styled, { css } from 'styled-components';
 import { isCircular } from 'styled-utils';
 
+import colors from '../Colors/colorset';
+
 /*
  * In styled-components, you can define functions that output
  * CSS properties. This functions can be called from inside the
@@ -39,13 +41,13 @@ export const Button = styled.div`
   outline: none;
   border: 2px solid;
   border-radius: ${p => borderRadiusFromSize(p.size ? p.size : '1rem')};
-  border-color: ${p => p.color};
+  border-color: ${p => p.color ? p.color : colors.royalgold};
   box-sizing: border-box;
   line-height: 1.5;
   position: relative;
   user-select: none;
   text-decoration: none;
-  color: ${p => p.color};
+  color: ${p => p.color ? p.color : colors.royalgold};
   font-size: ${p => p.size ? p.size : '1rem'};
   &:not(:last-child) {
     margin: 0 0.25em 0 0;

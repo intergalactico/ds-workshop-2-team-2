@@ -1,11 +1,11 @@
 import React from 'react'
-import { node, arrayOf, string } from 'prop-types';
+import { node, arrayOf, string, bool } from 'prop-types';
 
 import * as s from './styles.js'
 
-const Navigation = ({children, logo}) => {
+const Navigation = ({children, logo, background, fixed}) => {
   return (
-    <s.Navigation>
+    <s.Navigation background={background} fixed={fixed}>
         <img src={logo} style={{height: '50px' }} />
         <s.NavigationButtons>
             { children }
@@ -16,7 +16,9 @@ const Navigation = ({children, logo}) => {
 
 Navigation.propTypes = {
     logo: string,
-    children: arrayOf(node)
+    children: arrayOf(node),
+    background: string,
+    fixed: bool
 };
 
 export default Navigation
