@@ -1,5 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import colors from '../Colors/colorset';
 /*
  * withInfo is an addon which provides a block with
  * information about the component. It includes the
@@ -20,8 +21,8 @@ storiesOf('Section', module) // eslint-disable-line no-undef
     withInfo(`
  Section component provides a container with background color and paddings.
     `)(() => (
-      <Section backgroundColor='darkblue'>
-        <SectionHeader color='white'>Really long header text with lots of complicated text to hopefully wrap on several lines</SectionHeader>
-        <SectionText color='white'>Text inside the section (with typography).</SectionText>
+      <Section backgroundColor={colors.darkblue}>
+        <SectionHeader color={colors.white}>Really long header text with lots of complicated text to hopefully wrap on several lines</SectionHeader>
+        <SectionText color={colors.white}>Text inside the section (with typography).</SectionText>
       </Section>
   )));
