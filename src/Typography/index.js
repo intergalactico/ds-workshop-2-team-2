@@ -19,8 +19,6 @@ const Typography = () => {
 
   return (
     <div>
-      <ts.FuturaBold>In Futura Bold: The quick brown fox jumps over the lazy dog.</ts.FuturaBold>
-      <ts.Lato>In Lato: The quick brown fox jumps over the lazy dog.</ts.Lato>
       <div>
         <ts.Header1>I am Header1</ts.Header1>
         <pre><code>{`import * as ts from '../Typography/styles.js
@@ -40,7 +38,20 @@ const Typography = () => {
 `}</code></pre>
       </div>
       <div>
-        <ts.P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</ts.P>
+        <ts.Header4>I am Header4</ts.Header4>
+        <pre><code>{`import * as ts from '../Typography/styles.js
+<ts.Header4>I am Header4</ts.Header4>
+`}</code></pre>
+      </div>
+      <div>
+        <ts.Header5>I am Header5</ts.Header5>
+        <pre><code>{`import * as ts from '../Typography/styles.js
+<ts.Header5>I am Header5</ts.Header5>
+lo
+`}</code></pre>
+      </div>
+      <div>
+        <ts.Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</ts.Text>
         <pre><code>{`import * as ts from '../Typography/styles.js
 <ts.P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</ts.P>
 `}</code></pre>
