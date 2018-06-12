@@ -42,6 +42,7 @@ storiesOf('Button', module) // eslint-disable-line no-undef
             <Button>Normal</Button>
             <Button color={colors.white}>White button</Button>
             <Button color={colors.green}>Green button</Button>
+            <Button color={colors.royalgold}>Green button</Button>
             <Button color='#1b8ceb'>Primary</Button>
             <Button color='#00d1b2'>Success</Button>
             <Button color='#e91e63'>Danger</Button>
