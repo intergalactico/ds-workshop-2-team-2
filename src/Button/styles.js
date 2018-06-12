@@ -28,7 +28,7 @@ const borderRadiusFromSize = (sz) => {
 
 /* Default styles for all the buttons */
 export const Button = styled.div`
-  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: lato;
   font-weight: 400;
   height: 2.40em;
   display: inline-flex;
