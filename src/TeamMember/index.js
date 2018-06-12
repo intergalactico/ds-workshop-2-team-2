@@ -25,7 +25,7 @@ const TeamMember = (props) => {
    * Cards for different people output different information. This is communicated
    * to the component with properties.
    */
-  const { name, title, social, avatar } = props;
+  const { name, title, social, avatar, description } = props;
 
   /*
    * The component gets a list of social icons as an object. They need to be rendered as
@@ -52,8 +52,9 @@ const TeamMember = (props) => {
     <s.TeamMember>
       <img src={avatar} width="200" />
       <ts.Header2>{name}</ts.Header2>
-      TODO: show title
+      <s.Title>{title}</s.Title>
       {socialList}
+      <s.Subtitle>{description}</s.Subtitle>
     </s.TeamMember>
   );
 };
@@ -62,6 +63,7 @@ TeamMember.propTypes = {
   name: string.isRequired,
   title: string.isRequired,
   avatar: string.isRequired,
+  description: string,
   social: object
 };
 
