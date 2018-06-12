@@ -7,7 +7,7 @@
 import Box from 'Box';
 import Button from 'Button';
 import Icon from 'Icon';
-import Section, {SectionHeader, SectionText} from 'Section';
+import Section, {SectionHeader, SectionSubtitle, SectionText} from 'Section';
 import Typography from 'Typography';
 import TeamMember from 'TeamMember';
 import Hero from 'Hero';
@@ -20,6 +20,7 @@ export {
   Icon,
   Section,
   SectionHeader,
+  SectionSubtitle,
   SectionText,
   Typography,
   TeamMember,
