@@ -30,6 +30,7 @@ storiesOf('TeamMember', module) // eslint-disable-line no-undef
           linkedin: 'https://www.linkedin.com/company/the-walt-disney-company/'
         }}
         avatar='/assets/avatar.jpg'
+        description='That guy is so lorem ipsum dolor sit amet...'
       />
   )))
   .add('no social networks',

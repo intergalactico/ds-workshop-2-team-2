@@ -12,7 +12,6 @@ import { string, object } from 'prop-types';
  * styled component file of the Typography component.
  */
 import * as s from './styles.js';
-import * as ts from '../Typography/styles.js';
 
 /*
  * The TeamMember component reuses the Icon component when it needs to
@@ -25,7 +24,7 @@ const TeamMember = (props) => {
    * Cards for different people output different information. This is communicated
    * to the component with properties.
    */
-  const { name, title, social, avatar } = props;
+  const { name, title, social, avatar, description } = props;
 
   /*
    * The component gets a list of social icons as an object. They need to be rendered as
@@ -51,9 +50,10 @@ const TeamMember = (props) => {
   return (
     <s.TeamMember>
       <img src={avatar} width="200" />
-      <ts.Header2>{name}</ts.Header2>
-      TODO: show title
+      <s.Title>{name}</s.Title>
+      <s.Subtitle>{title}</s.Subtitle>
       {socialList}
+      <s.Text>{description}</s.Text>
     </s.TeamMember>
   );
 };
@@ -62,6 +62,7 @@ TeamMember.propTypes = {
   name: string.isRequired,
   title: string.isRequired,
   avatar: string.isRequired,
+  description: string,
   social: object
 };
 

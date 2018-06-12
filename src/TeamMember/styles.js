@@ -19,8 +19,13 @@ export const TeamMember = styled.div`
  * provide additional styles to it. It will use the tag of initial
  * elements.
  */
-export const Title = styled(ts.Header3)`
-  color: green;
+export const Title = styled(ts.Header4)`
+`;
+
+export const Subtitle = styled(ts.Header5)`
+`;
+
+export const Text = styled(ts.Text)`
 `;
 
 /*
