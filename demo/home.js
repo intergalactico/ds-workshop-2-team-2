@@ -6,20 +6,18 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-import { Icon, Section, SectionHeader, SectionText } from '../lib/my-awesome-library'
+import { Hero, Icon, Section, SectionHeader, SectionText, Color } from '../lib/my-awesome-library'
 
 const st = Section.SectionTypography
 
 const Home = () => {
   return (
     <div>
-      <div>
-        <Icon name='star' color='#000' isInverted size='0.785rem' />
-        <Icon name='star' color='#888888' isInverted />
-        <Icon name='github' color='#1b8ceb'isInverted size='1.5rem' />
-        <Icon name='gift' color='#00d1b2' isInverted size='2.0rem' />
-        <Icon name='bug' color='#e91e63' isInverted size='3rem' />
-      </div>
+        <Hero title="A DESIGN SYSTEMS CONFERENCE"
+            text="MARCH 14th – 15th, 2018 IN HELSINKI, FINLAND"
+            action="Event overview"
+            background='/assets/dsconf-wide.jpg'
+            onAction={() => console.log("Hello")}/>
       <div>
         <Section>
           <SectionHeader>Hello!</SectionHeader>

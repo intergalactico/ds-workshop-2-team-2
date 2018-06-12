@@ -5,7 +5,7 @@ import * as s from './styles.js'
 
 const Hero = (props) => {
   return (
-    <s.Hero>
+    <s.Hero background={props.background} height={props.height}>
       <s.HeroHeader>{props.title}</s.HeroHeader>
       <s.HeroText>{props.text}</s.HeroText>
       <s.HeroButton onClick={props.onAction}>{props.action}</s.HeroButton>
@@ -17,7 +17,9 @@ Hero.propTypes = {
     title: string.isRequired,
     text: string.isRequired,
     action: string.isRequired,
-    onAction: string.isRequired
+    onAction: string.isRequired,
+    background: string,
+    height: string
 };
 
 export default Hero
