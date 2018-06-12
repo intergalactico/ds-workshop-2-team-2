@@ -16,17 +16,12 @@ let plugins = [
       NODE_ENV: JSON.stringify(process.env.NODE_ENV)
     }
   }),
-  new webpack.NamedModulesPlugin()
+  new webpack.NamedModulesPlugin(),
+  new webpack.optimize.UglifyJsPlugin({ minimize: true }),
+  new CopyWebpackPlugin([
+    { from: 'assets', to: 'assets' }
+  ])
 ];
-
-if (env === 'production') {
-  plugins.push(
-    new webpack.optimize.UglifyJsPlugin({ minimize: true }),
-    new CopyWebpackPlugin([
-      { from: 'assets', to: 'assets' }
-    ])
-  );
-}
 
 const paths = {
   libSrc: path.resolve(__dirname, 'src'),
