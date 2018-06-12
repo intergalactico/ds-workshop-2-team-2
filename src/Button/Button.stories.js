@@ -14,6 +14,7 @@ import Icon from 'Icon';
 
 /* The component to document */
 import Button from '.';
+import colors from '../Colors/colorset';
 
 storiesOf('Button', module) // eslint-disable-line no-undef
   .add('index',
@@ -39,6 +40,8 @@ storiesOf('Button', module) // eslint-disable-line no-undef
         <div>
           <Box>
             <Button>Normal</Button>
+            <Button color={colors.white}>White button</Button>
+            <Button color={colors.green}>Green button</Button>
             <Button color='#1b8ceb'>Primary</Button>
             <Button color='#00d1b2'>Success</Button>
             <Button color='#e91e63'>Danger</Button>
