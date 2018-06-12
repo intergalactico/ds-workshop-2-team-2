@@ -51,9 +51,9 @@ const TeamMember = (props) => {
     <s.TeamMember>
       <img src={avatar} width="200" />
       <s.Title>{name}</s.Title>
-      <s.Title>{title}</s.Title>
+      <s.Subtitle>{title}</s.Subtitle>
       {socialList}
-      <s.Subtitle>{description}</s.Subtitle>
+      <s.Text>{description}</s.Text>
     </s.TeamMember>
   );
 };

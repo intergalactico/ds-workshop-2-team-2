@@ -25,6 +25,9 @@ export const Title = styled(ts.Header4)`
 export const Subtitle = styled(ts.Header5)`
 `;
 
+export const Text = styled(ts.Text)`
+`;
+
 /*
  * The colors can be takes from the set and used as variables.
  */
