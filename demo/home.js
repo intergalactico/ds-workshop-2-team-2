@@ -6,7 +6,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-import { Hero, Icon, Section, SectionHeader, SectionText, Color } from '../lib/my-awesome-library'
+import { Hero, Icon, Section, SectionHeader, SectionText, Color, Navigation, Button } from '../lib/my-awesome-library'
 
 import BroughtToYouBy from './BroughtToYouBy';
 
@@ -15,6 +15,11 @@ const st = Section.SectionTypography
 const Home = () => {
   return (
     <div>
+        <Navigation logo="/assets/dsconf-logo-small.png">
+            <Button href="#">Hello 1</Button>
+            <Button href="#">Hello 2</Button>
+            <Button href="#">Hello 3</Button>
+        </Navigation>
         <Hero title="A DESIGN SYSTEMS CONFERENCE"
             text="MARCH 14th – 15th, 2018 IN HELSINKI, FINLAND"
             action="Event overview"

@@ -13,6 +13,7 @@ import TeamMember from 'TeamMember';
 import Hero from 'Hero';
 import Form from 'Form';
 import Color from 'Colors/colorset';
+import Navigation from 'Navigation';
 
 export {
   Box,
@@ -26,5 +27,6 @@ export {
   TeamMember,
   Hero,
   Color,
-  Form
+  Form,
+  Navigation
 };
