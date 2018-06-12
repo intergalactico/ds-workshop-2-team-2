@@ -10,6 +10,9 @@ import Icon from 'Icon';
 import Section, {SectionHeader, SectionText} from 'Section';
 import Typography from 'Typography';
 import TeamMember from 'TeamMember';
+import Hero from 'Hero';
+import Form from 'Form';
+import Color from 'Colors/colorset';
 
 export {
   Box,
@@ -19,5 +22,8 @@ export {
   SectionHeader,
   SectionText,
   Typography,
-  TeamMember
+  TeamMember,
+  Hero,
+  Color,
+  Form
 };
