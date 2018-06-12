@@ -1,0 +1,59 @@
+PATTERNS
+
+Navigation
+
+- Navigation.Image
+- Navigation.Link
+
+Hero
+
+- Hero.Image
+- Hero.Header (Header1)
+- Hero.Text
+- Hero.Button
+
+Section
+
+- Section.Title (Header2)
+- Section.Subtitle (Header3)
+- Section.Text
+
+PersonCard
+
+- Card.Image
+- Card.Title (Header4)
+- Card.Subtitle (Header5)
+- Card.Link
+- Card.Text
+
+Footer
+
+- Footer.Text
+
+
+
+
+
+COMPONENTS
+
+Header1 (h1)
+
+Header2 (h2)
+
+Header3 (h3)
+
+Header4 (h4)
+
+Header5 (h5)
+
+Text (p)
+
+Link (a)
+
+Image (img)
+
+Form (form)
+
+InputField (input)
+
+Button (button)
