@@ -2,6 +2,7 @@
 
 const webpack = require('webpack');
 const nodeExternals = require('webpack-node-externals');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 const path = require('path');
 const env = require('yargs').argv.env;
 
@@ -19,7 +20,12 @@ let plugins = [
 ];
 
 if (env === 'production') {
-  plugins.push(new webpack.optimize.UglifyJsPlugin({ minimize: true }));
+  plugins.push(
+    new webpack.optimize.UglifyJsPlugin({ minimize: true }),
+    new CopyWebpackPlugin([
+      { from: 'assets', to: 'assets' }
+    ])
+  );
 }
 
 const paths = {
