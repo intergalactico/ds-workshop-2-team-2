@@ -30,7 +30,10 @@ const Home = () => {
   An event for digital product designers, builders, business owners and organizations who want to learn how to build design systems and why they are needed in the future. We are at a crossroads whereby making the right decisions, you will gain a significant business advantage and ensure the best possible user experience for your digital products and services.
   Sounds good? Make sure you familiarize yourself with our code of conduct.</SectionText>
       </Section>
-
+      <Section>
+          <SectionHeader>Keynotes, talks and workshops from the fore-front of Design Systems.</SectionHeader>
+          <SectionText>DSCONF has 4 long, and 6 shorter speeches during the conference day. We are aiming to bring abundance of tangible information to attendees with real cases and learnings. The second day of DSCONF is dedicated to workshops. There is a total number of 5 workshops, and you can purchase them separately. The workshops are either half-day or full-day.</SectionText>
+        </Section>
       <BroughtToYouBy />
     </div>
   )
