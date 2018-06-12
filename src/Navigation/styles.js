@@ -5,9 +5,9 @@ const isFixed = ({fixed}) => {
 
     return css`
         position: fixed;
-        top: 0px;
+        top: 1rem;
         left: 0px;
-        width: 98vw;
+        width: 100vw;
     `;
 }
 
@@ -18,7 +18,8 @@ export const Navigation = styled.div`
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 0 1rem;
+    padding: 0 2rem;
+    box-sizing: border-box;
     ${isFixed},
     background: transparent
 `;
