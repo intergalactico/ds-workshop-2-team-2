@@ -15,7 +15,7 @@ const Button = ({ href, children, ...props }) => {
 
   /* Adding an "API" classname, by which it is possible to redefine the component style properties */
   let className = cx(
-    isButtonLink ? 'button button--link' : 'button', 
+    isButtonLink ? 'button button--link' : 'button',
     props.className
   );
 
