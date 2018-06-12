@@ -16,8 +16,13 @@ export const SectionInner = styled.div`
   padding-left: 35px;
 `;
 
-export const SectionHeader = styled(ts.Header1)`
+export const SectionHeader = styled(ts.Header2)`
   color: ${p => p.color};
+`;
+
+export const SectionSubtitle = styled(ts.Header3)`
+  color: ${p => p.color};
+  text-align: ${p => p.textAlign ? p.textAlign : 'left'};
 `;
 
 export const SectionText = styled(ts.Text)`

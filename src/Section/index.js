@@ -44,6 +44,8 @@ Section.propTypes = {
 
 export const SectionHeader = s.SectionHeader;
 
+export const SectionSubtitle = s.SectionSubtitle;
+
 export const SectionText = s.SectionText;
 
 export default Section;

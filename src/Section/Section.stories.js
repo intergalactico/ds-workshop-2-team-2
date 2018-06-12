@@ -14,7 +14,7 @@ import { withInfo } from '@storybook/addon-info';
  * as one object and are renamed to "t", this is shorter. Look below how
  * to wrap texts with them.
  */
-import Section, {SectionHeader, SectionText} from '.';
+import Section, {SectionHeader, SectionSubtitle, SectionText} from '.';
 
 storiesOf('Section', module) // eslint-disable-line no-undef
   .add('index',
@@ -23,6 +23,7 @@ storiesOf('Section', module) // eslint-disable-line no-undef
     `)(() => (
       <Section backgroundColor={colors.darkblue}>
         <SectionHeader color={colors.white}>Really long header text with lots of complicated text to hopefully wrap on several lines</SectionHeader>
+        <SectionSubtitle color={colors.white} textAlign='center'>Short centered subtitle</SectionSubtitle>
         <SectionText color={colors.white}>Text inside the section (with typography).</SectionText>
       </Section>
   )));
